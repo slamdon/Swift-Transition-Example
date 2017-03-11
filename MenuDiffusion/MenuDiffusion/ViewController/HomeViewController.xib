@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MenuDiffusion" customModuleProvider="target">
+            <connections>
+                <outlet property="menuButton" destination="Ym8-d8-Ijl" id="0Xu-Es-mZY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-home" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-c0-EWz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ym8-d8-Ijl">
+                    <rect key="frame" x="20" y="380" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Hpx-am-ZaU"/>
+                    </constraints>
+                    <state key="normal" title="MENU">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapMenu:" destination="-1" eventType="touchUpInside" id="W0F-HO-9nN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ios.devdon.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-3Z-WwT">
+                    <rect key="frame" x="20" y="640" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Aeb-3Z-WwT" secondAttribute="trailing" constant="20" id="4O9-f0-yMk"/>
+                <constraint firstItem="zaY-c0-EWz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ns8-ve-dO8"/>
+                <constraint firstAttribute="bottom" secondItem="Aeb-3Z-WwT" secondAttribute="bottom" constant="10" id="Ont-aj-wr6"/>
+                <constraint firstItem="zaY-c0-EWz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QP5-sS-YUS"/>
+                <constraint firstItem="Aeb-3Z-WwT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="caX-8L-tn1"/>
+                <constraint firstAttribute="trailing" secondItem="Ym8-d8-Ijl" secondAttribute="trailing" constant="20" id="dUC-uc-Pn4"/>
+                <constraint firstAttribute="bottom" secondItem="zaY-c0-EWz" secondAttribute="bottom" id="e7Z-5e-efI"/>
+                <constraint firstAttribute="trailing" secondItem="zaY-c0-EWz" secondAttribute="trailing" id="fPp-hX-tcE"/>
+                <constraint firstItem="Ym8-d8-Ijl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iwZ-E6-Wns"/>
+                <constraint firstItem="Ym8-d8-Ijl" firstAttribute="centerY" secondItem="zaY-c0-EWz" secondAttribute="centerY" multiplier="1.2" id="rck-oE-Trg"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-home" width="640" height="960"/>
+    </resources>
+</document>
